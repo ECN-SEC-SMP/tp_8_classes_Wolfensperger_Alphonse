@@ -25,20 +25,20 @@ bool Attaque::resoudreAttaque(Attaque &a) const{
   //Le match nul n'est pas encore implémenté...........................................
   int joueur = this->type;
   int adversaire = a.type;
-  if(joueur=0 && adversaire = 2){
+  if(joueur==0 && adversaire == 2){
     return true;
   }
-  else if(joueur=1 && adversaire = 0){
+  else if(joueur==1 && adversaire == 0){
     return true;
   }
-  else if(joueur=2 && adversaire = 1){
+  else if(joueur==2 && adversaire == 1){
     return true;
   }
   else if (joueur=adversaire){
     srand(time(NULL));
     int partie = rand()% (2);
     
-    if(partie=1) {return true};
+    if(partie==1) {return true;}
     
     else return false;
   }
@@ -50,7 +50,7 @@ bool Attaque::resoudreAttaque(Attaque &a) const{
 
 string Attaque::getNomAttaque() const{
   int nb = this->type;
-  if(nb == 0) {return "Pierre"};
-  else if(nb == 1){ return "Feuille"};
-  else {return "Ciseaux"};
+  if(nb == 0) {return "Pierre";}
+  else if(nb == 1){ return "Feuille";}
+  else {return "Ciseaux";}
 }

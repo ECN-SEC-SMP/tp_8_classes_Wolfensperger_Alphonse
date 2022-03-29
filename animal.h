@@ -1,5 +1,10 @@
 #pragma once
 #include <iostream>
+#include "attaque.h"
+
+#ifndef animal_h
+#define animal_h
+
 using namespace std;
 
 
@@ -24,4 +29,4 @@ public:
   
 };
 
-
+#endif

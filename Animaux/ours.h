@@ -6,11 +6,9 @@
 using namespace std;
 
 
-class Ours {
-private :
-  Animal animalOurs;
+class Ours : public Animal{
 public:
-  voidsetAttaque(Animal &a);
+  voidsetAttaque();
   voiddeplace(int maxX, int maxY);
 };
 
