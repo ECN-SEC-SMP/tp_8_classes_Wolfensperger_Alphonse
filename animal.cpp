@@ -34,9 +34,14 @@ void Animal::setVivant(bool v){
   this->vivant = v;
 }
 
-/*bool Animal::attaque(Animal &a){
-  if((this->x==a.))
-}*/
+bool Animal::attaque(Animal &a){
+  if((this->x==a.getX()) && (this->y==a.getY())){ //si l'animal à attaquer est de même coordonées 
+    return true; 
+  }
+  else {
+    return false;
+  }
+}
 
 //----- méthodes virtuelles pures : -----//
 void Animal::setAttaque(){} 
