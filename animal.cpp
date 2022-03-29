@@ -27,12 +27,18 @@ bool Animal::getVivant() const{
 }
 
 Attaque Animal::getAttaque() const{
-  
+  return this->typeAttaque;
 }
 
 void Animal::setVivant(bool v){
   this->vivant = v;
 }
-bool Animal::attaque(Animal &a){}
-void Animal::setAttaque(){}
+
+/*bool Animal::attaque(Animal &a){
+  if((this->x==a.))
+}*/
+
+//----- méthodes virtuelles pures : -----//
+void Animal::setAttaque(){} 
 void Animal::deplace(int maxX, int maxY){}
+//---------------------------------------//
