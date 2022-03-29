@@ -1,3 +1,1 @@
-# compte
-
-Code du cours de C++ sur les comptes pour tests GitHub
+# tp_8_classes_Wolfensperger_Alphonse 
