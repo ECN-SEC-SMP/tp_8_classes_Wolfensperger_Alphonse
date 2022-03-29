@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 
-class thispoint {
-private :
-public:
-  }
+//Inclusion entre attaque et animal
+
+
 
 
 int main() {
