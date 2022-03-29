@@ -1,4 +1,4 @@
-machin.out : Point.o
-	g++ -o machin.out  Point.o
-Point.0 : Point.cpp
-	g++ -c Point.cpp
+machin.out : animal.o
+	g++ -o machin.out  animal.o
+animal.0 : animal.cpp
+	g++ -c animal.cpp
