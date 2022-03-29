@@ -8,8 +8,8 @@ using namespace std;
 
 class Lion : public Animal{
 public:
-  voidsetAttaque();
-  voiddeplace(int maxX, int maxY);
+  void setAttaque();
+  void deplace(int maxX, int maxY);
 };
 
 #endif

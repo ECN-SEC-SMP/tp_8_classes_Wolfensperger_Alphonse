@@ -5,9 +5,9 @@ using namespace std;
 
 class Attaque {
 private :
-  int type; // 0 :pierre, 1: Feuille, 2:CiseauxAttaque
+  int type; // 0 :pierre, 1: Feuille, 2:Ciseaux
 public:
-  Attaque(); //crée une attaque random
+  Attaque(void); //crée une attaque random
   Attaque(int a); //crée une attaque spécifique
   int getAttaque() const;
   bool resoudreAttaque(Attaque &a) const;

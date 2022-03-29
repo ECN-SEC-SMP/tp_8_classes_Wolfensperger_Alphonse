@@ -4,7 +4,7 @@
 using namespace std;
 // 0 :pierre, 1: Feuille, 2:CiseauxAttaque
 //----- Constructeurs : -----//
-Attaque::Attaque(){ //crée une attaque random
+Attaque::Attaque(void){ //crée une attaque random
  srand(time(NULL));
  int nombre = rand()% (3);
  this->type = nombre; 

@@ -9,11 +9,12 @@ using namespace std;
 
 
 class Animal {
-private :
+private:
   string nom;
+  bool vivant;
+protected:
   int x;
   int y;
-  bool vivant;
   Attaque typeAttaque;
 public:
   Animal(int maxX, int maxY);

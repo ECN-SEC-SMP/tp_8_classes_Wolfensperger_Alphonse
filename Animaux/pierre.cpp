@@ -2,7 +2,9 @@
 #include "pierre.h"
 using namespace std;
 
-void setAttaque() {
+void Pierre::setAttaque() {
+  Attaque temp(0);
+  this->typeAttaque = temp;
 }
 
-void deplace(int maxX, int maxY) {}
+void Pierre::deplace(int maxX, int maxY) {}
