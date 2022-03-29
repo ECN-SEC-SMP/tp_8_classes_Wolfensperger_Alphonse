@@ -9,8 +9,8 @@ void Loup::setAttaque() {
 
 void Loup::deplace(int maxX, int maxY) {
   srand(time(NULL));
-  int randx=rand()%(10);
-  int randy=rand()%(10);
+  int randx=rand()%(maxX);
+  int randy=rand()%(maxY);
   this->x=randx;
   this->y=randy;
 }

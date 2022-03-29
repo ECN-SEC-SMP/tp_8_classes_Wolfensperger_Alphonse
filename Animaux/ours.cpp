@@ -12,8 +12,6 @@ void Ours::setAttaque() {
 void Ours::deplace(int maxX, int maxY) {
   srand(time(NULL));
   int ind_pos=rand()%(8);
-
-  int  coord_temp = [];
   
   switch(ind_pos) {
     case 0:
@@ -55,6 +53,19 @@ void Ours::deplace(int maxX, int maxY) {
       this->x += 2;
       this->y -= 1;
       break;
-
   }
+
+  if(this->x<0){
+    this->x = maxX-(this->x);
+  }
+  else {
+    this->x = (this->x)%maxX;
+  }
+
+  if(this->y<0){
+    this->y = maxY-(this->y);
+  }
+  else {
+    this->y = (this->y)%maxY;
+  } 
 }
