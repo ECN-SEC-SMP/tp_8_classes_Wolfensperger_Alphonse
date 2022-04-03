@@ -3,12 +3,12 @@
 using namespace std;
 
 //----- Constructeurs : -----//
-Animal::Animal(int maxX, int maxY){
+Animal::Animal(int maxX, int maxY){ //faire constructeur aléatoire
   this->x=maxX;
   this->y=maxY;
 }
 
-Animal::Animal(int maxX, int maxY,int a,int b){
+Animal::Animal(int maxX, int maxY,int a,int b){ 
   this->x=a%maxX; //si l'on dépasse la limite
   this->y=b%maxY;
 }
